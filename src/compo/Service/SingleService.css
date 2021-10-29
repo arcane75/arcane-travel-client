@@ -1,0 +1,77 @@
+
+.service-text{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.service-text h2{
+color: #BC74A5;
+font-weight: 600;
+font-size: 40px;
+}
+.service-text h1{
+color:#0E54AE ;
+font-size: 80px;
+font-weight: 600;
+}
+.service-btn{
+    text-align: right;
+}
+
+
+.btn {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    padding: 18px 45px;
+    border-radius: 45px;
+    font-weight: 500;
+    border: 1px solid;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden
+}
+
+.btn-primary:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 100%;
+    background: linear-gradient(45deg, #00a8f4 0%, #02d1a1 100%);
+    z-index: -1;
+    transition: ease 0.3s
+}
+
+@media only screen and (min-width: 600px) 
+{/*
+    .homeService{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+     .service-text{
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .service-text h2{
+        color: #BC74A5;
+        font-weight: 100;
+        font-size: 10px;
+        }
+    .service-text h1{
+        color:#0E54AE ;
+        font-size: 10px;
+        font-weight:100;
+        }
+
+    .homeService p{
+         text-align: justify;
+         color:#757575;
+        padding-right: 2px;
+        padding-left: 2px;
+            
+        } */
+
+}
