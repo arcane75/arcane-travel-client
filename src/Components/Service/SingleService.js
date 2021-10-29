@@ -1,13 +1,11 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useCart from '../../hooks/useCart';
-
 import './SingleService.css';
 
 const SingleService = (props) => {
     const { name, img, description, price } = props.service || {};
-    const { cart } = useCart();
+  
     return (
         <>
             <div className="home-service">

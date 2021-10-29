@@ -5,16 +5,12 @@ import initializeAuthentication from '../../Firebase/firebase.init';
 import useFirebase from '../../hooks/useFirebase';
 import logo from '../../images/logo.png';
 import "./MenuBar.css";
-import Cart from '../Cart/Cart';
-import { addToDb } from '../../utilities/fakedb';
-import useCart from '../../hooks/useCart';
+//import useCart from '../../hooks/useCart';
 
 initializeAuthentication();
 
 const MenuBar = () => {
     const { user, logOut } = useFirebase();
-    const [cart, setCart] = useCart();
-    console.log(user);
     return (
         <div className="menubar">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="light">
@@ -42,7 +38,7 @@ const MenuBar = () => {
                                 </NavLink>
                             }
 
-                            <NavLink className="ps-3 item" to="/cart"> <i class="fas fa-cart-arrow-down"></i>
+                            <NavLink className="ps-3 item" to="/cart"> <i className="fas fa-cart-arrow-down"></i>
                             </NavLink>
 
 

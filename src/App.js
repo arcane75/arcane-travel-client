@@ -8,10 +8,10 @@ import UserLogin from './components/userlogin/UserLogin';
 import ContactUs from './components/ContactUs/ContactUs';
 import Error from './components/Error/Error';
 import AboutUs from './components/AboutUs/AboutUs';
-import AllService from './components/AllService/AllService';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AllServices from './components/AllServices/AllServices';
 import OrderReview from './components/OrderReview/OrderReview';
+import Shipping from './components/Shipping/Shipping';
 
 function App() {
   return (
@@ -47,6 +47,11 @@ function App() {
             <Route path='/cart'>
               <OrderReview></OrderReview>
             </Route>
+
+            <Route path='/shipping'>
+              <Shipping></Shipping>
+            </Route>
+
             <Route path="*">
               <Error></Error>
             </Route>

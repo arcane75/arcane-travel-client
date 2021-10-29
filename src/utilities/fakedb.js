@@ -2,8 +2,9 @@
 const addToDb = id => {
   const exists = getDb();
   let shopping_cart = {};
-  if (exists.length > 1) {
+  if (exists) {
     shopping_cart[id] = 1;
+    // console.log(shopping_cart);
   }
   alert('Please select at a time one package');
   updateDb(shopping_cart);
