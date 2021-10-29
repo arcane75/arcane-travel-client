@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyABU6KXACfLTQ0T7Eq25sPSgNZZk0t3uec",
-    authDomain: "arcane-travel.firebaseapp.com",
-    projectId: "arcane-travel",
-    storageBucket: "arcane-travel.appspot.com",
-    messagingSenderId: "330807732150",
-    appId: "1:330807732150:web:73c26d09371899ca7d0317"
-  };
+    apiKey: "AIzaSyBcr8jF6TSDOM1T-eBXs9T2GWkcRd9zmEw",
+    authDomain: "arcane-dental-care.firebaseapp.com",
+    projectId: "arcane-dental-care",
+    storageBucket: "arcane-dental-care.appspot.com",
+    messagingSenderId: "943474613008",
+    appId: "1:943474613008:web:a3dfaba40e2d9b0db5a395"
+};
 
 export default firebaseConfig;

@@ -1,0 +1,58 @@
+[
+    {
+        "key": "B002RL8IYK",
+        "name": "Paris and Bordeaux",
+        "img": "https://i.ibb.co/hF0mskX/package-1.webp",
+        "description": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.",
+        "price": 500
+    },
+    {
+        "key": "B002RL8GYK",
+        "name": "Maldives",
+        "img": "https://i.ibb.co/q5jdjmc/package-2.jpg",
+        "description": "Its tourism industry is today the Maldives' largest revenue generator. Due to their underwater scenery and clean water, the Maldives is ranked among the best recreational diving destinations of the world, with over 60 local dive sites across the islands.",
+        "price": 500
+    },
+    {
+        "key": "Y002RL8IYK",
+        "name": "Mauritius",
+        "img": "https://i.ibb.co/hF0mskX/package-1.webp",
+        "description": "Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs. The mountainous interior includes Black River Gorges National Park, with rainforests, waterfalls, hiking trails and wildlife like the flying fox. Capital Port Louis has sites such as the Champs de Mars horse track, Eureka plantation house and 18th-century Sir Seewoosagur Ramgoolam Botanical Gardens.",
+        "price": 500
+    },
+    {
+        "key": "B008SL8IYK",
+        "name": "Vanice, Italy",
+        "img": "https://i.ibb.co/q5jdjmc/package-2.jpg",
+        "description": "A dental implant is a surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, or facial prosthesis or to act as an orthodontic anchor.",
+        "price": 500
+    },
+    {
+        "key": "ZG02RL8IYK",
+        "name": "Arrecife, Spain",
+        "img": "https://i.ibb.co/hF0mskX/package-1.webp",
+        "description": "It will take roughly 1-2 weeks for your tooth extraction site to completely heal; however, if you notice any of the following symptoms or signs, be sure to contact our doctors as soon as possible: Fever.",
+        "price": 500
+    },
+    {
+        "key": "B004QL8IYK",
+        "name": "Phuket Thailand",
+        "img": "https://i.ibb.co/q5jdjmc/package-2.jpg",
+        "description": "A dental implant is a surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, or facial prosthesis or to act as an orthodontic anchor.",
+        "price": 500
+    },
+    {
+        "key": "B002RL8PYK",
+        "name": "Amsterdam",
+        "img": "https://i.ibb.co/hF0mskX/package-1.webp",
+        "description": "To treat a cavity your dentist will remove the decayed portion of the tooth and then fill the area on the tooth where the decayed material once lived. Fillings are also used to repair cracked or broken teeth and teeth that have been worn down from misuse",
+        "price": 500
+    },
+    {
+        "key": "B002RL8ILH",
+        "name": "Teeth Whitening",
+        "img": "https://i.ibb.co/q5jdjmc/package-2.jpg",
+        "description": "It will take roughly 1-2 weeks for your tooth extraction site to completely heal; however, if you notice any of the following symptoms or signs, be sure to contact our doctors as soon as possible: Fever.",
+        "price": 500
+    }
+]

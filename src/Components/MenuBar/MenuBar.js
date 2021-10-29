@@ -5,11 +5,15 @@ import initializeAuthentication from '../../Firebase/firebase.init';
 import useFirebase from '../../hooks/useFirebase';
 import logo from '../../images/logo.png';
 import "./MenuBar.css";
+import Cart from '../Cart/Cart';
+import { addToDb } from '../../utilities/fakedb';
+import useCart from '../../hooks/useCart';
 
 initializeAuthentication();
 
 const MenuBar = () => {
     const { user, logOut } = useFirebase();
+    const [cart, setCart] = useCart();
     console.log(user);
     return (
         <div className="menubar">
@@ -21,22 +25,26 @@ const MenuBar = () => {
                         <Nav className=" justify-content-end " style={{ width: "100%" }}>
 
 
-                            <NavLink className="pe-3 ps-3 item text-white" to="/home"><i className="fas fa-home"></i> Home</NavLink>
+                            <NavLink className="pe-3 ps-3 item" to="/home"><i className="fas fa-home"></i> Home</NavLink>
 
-                            <NavLink className="pe-3 item text-white" to="/services"><i className="fas fa-tasks"></i> Services</NavLink>
+                            <NavLink className="pe-3 item" to="/services"><i className="fas fa-tasks"></i> Services</NavLink>
 
-                            <NavLink className="pe-3 item text-white" to="/contact"><i className="fas fa-envelope"></i> Contact</NavLink>
+                            <NavLink className="pe-3 item" to="/contact"><i className="fas fa-envelope"></i> Contact</NavLink>
 
-                            <NavLink className="pe-3 item text-white" to="/about"><i className="far fa-calendar-check"></i> About Us</NavLink>
+                            <NavLink className="pe-3 item" to="/about"><i className="far fa-calendar-check"></i> About Us</NavLink>
 
 
                             {(user?.email) ?
 
-                                <Button className="logoutbtn btn-sm text-white" onClick={logOut}>Logout {user?.displayName}</Button>
+                                <Button className="logoutbtn btn-sm" onClick={logOut}>Logout {user?.displayName}</Button>
                                 :
-                                <NavLink className="item text-white" to="/userlogin"><i className="fas fa-user"></i> Login 
+                                <NavLink className="item" to="/userlogin"><i className="fas fa-user"></i> Login
                                 </NavLink>
                             }
+
+                            <NavLink className="ps-3 item" to="/cart"> <i class="fas fa-cart-arrow-down"></i>
+                            </NavLink>
+
 
                         </Nav>
                     </Navbar.Collapse>

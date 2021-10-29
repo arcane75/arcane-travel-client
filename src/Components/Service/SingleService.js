@@ -1,0 +1,36 @@
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import useCart from '../../hooks/useCart';
+
+import './SingleService.css';
+
+const SingleService = (props) => {
+    const { name, img, description, price } = props.service || {};
+    const { cart } = useCart();
+    return (
+        <>
+            <div className="home-service">
+                <div >
+                    <img src={img} alt=" " />
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    <h2>Price: ${price} </h2>
+                    <div>
+                        <Link to="/services">
+                            <Button className="btn btn-sm btn-warning">Explore item</Button>
+                        </Link>
+                        
+                        <Link to="/cart">
+                            <Button className="btn-sm btn btn-warning" onClick={() => props.handleAddToCart(props.service)}>Purchase</Button>
+                        </Link>
+
+                    </div>
+                </div>
+            </div>
+
+        </>
+    );
+};
+
+export default SingleService;
