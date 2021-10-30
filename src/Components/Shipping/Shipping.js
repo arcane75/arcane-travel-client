@@ -13,6 +13,7 @@ const Shipping = () => {
     const { user } = useAuth();
 
     const onSubmit = data => {
+        data.status = 'pending';
         console.log(data);
         const savedCart = getStoredCart();
         data.order = savedCart;

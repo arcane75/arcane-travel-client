@@ -2,8 +2,6 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
-import SingleService from '../Service/SingleService';
 import ServiceHome from '../Services/ServiceHome';
 import Subscription from '../Subscribe/Subscription';
 import UserReviews from '../UserReviews/UserReviews';
@@ -12,7 +10,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+
             <Banner></Banner>
             <div className="container my-3">
                 <div className="row serviceinfo">

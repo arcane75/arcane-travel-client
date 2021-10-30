@@ -7,7 +7,7 @@ const useCart = () => {
     useEffect(() => {
         const savedCart = getStoredCart();
         const keys = Object.keys(savedCart);
-        fetch('http://localhost:5000/packages/byKey', {
+        fetch('https://secret-oasis-75904.herokuapp.com/packages/byKey', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -16,6 +16,7 @@ const useCart = () => {
         })
             .then(res => res.json())
             .then(products => {
+                
                 if (products.length) {
                     const storedCart = [];
                     for (const key in savedCart) {

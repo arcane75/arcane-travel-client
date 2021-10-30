@@ -1,12 +1,10 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import MenuBar from '../MenuBar/MenuBar';
 import "./ContactUs.css";
 
 const ContactUs = () => {
     return (
         <div>
-            <MenuBar></MenuBar>
 
             <div className="container contact">
                 <div className="row">

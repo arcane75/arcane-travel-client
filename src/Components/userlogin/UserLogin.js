@@ -1,9 +1,8 @@
 import { useState, React, useEffect } from "react";
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import {  useLocation, useHistory } from 'react-router-dom';
 import initializeAuthentication from '../../Firebase/firebase.init';
 import useAuth from '../../hooks/useAuth';
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
-import Header from "../Header/Header";
 
 
 initializeAuthentication();
@@ -147,7 +146,6 @@ const UserLogin = () => {
 
     return (
         <>
-            <Header></Header>
 
             <section className="vh-100" style={{ backgroundColor: "#eee" }}>
                 <div className="container h-100">

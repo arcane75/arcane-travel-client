@@ -1,12 +1,10 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import MenuBar from '../MenuBar/MenuBar';
 import "./AboutUs.css";
 
 const AboutUs = () => {
     return (
         <div>
-            <MenuBar></MenuBar>
             <div className="about-img">
 
             </div>

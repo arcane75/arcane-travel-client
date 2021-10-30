@@ -9,15 +9,19 @@ import ContactUs from './components/ContactUs/ContactUs';
 import Error from './components/Error/Error';
 import AboutUs from './components/AboutUs/AboutUs';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import AllServices from './components/AllServices/AllServices';
 import OrderReview from './components/OrderReview/OrderReview';
 import Shipping from './components/Shipping/Shipping';
+import AddPackage from './components/AddPackage/AddPackage';
+import ManageAllOrder from './components/ManageAllOrder/ManageAllOrder';
+import Admin from './components/Admin/Admin';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
+          <Header></Header>
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -32,9 +36,6 @@ function App() {
               <UserLogin></UserLogin>
             </Route>
 
-            <PrivateRoute path="/services">
-              <AllServices></AllServices>
-            </PrivateRoute>
 
             <Route path="/contact">
               <ContactUs></ContactUs>
@@ -51,6 +52,18 @@ function App() {
             <Route path='/shipping'>
               <Shipping></Shipping>
             </Route>
+
+            <Route path='/addpackage'>
+              <AddPackage></AddPackage>
+            </Route>
+
+            <Route path='/allOrder'>
+              <ManageAllOrder></ManageAllOrder>
+            </Route>
+
+            <PrivateRoute path="/admin">
+              <Admin></Admin>
+            </PrivateRoute>
 
             <Route path="*">
               <Error></Error>

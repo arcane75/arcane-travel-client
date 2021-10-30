@@ -17,8 +17,6 @@ const OrderReview = () => {
     }
 
     const handleProceedToShipping = () => {
-        // setCart([]);
-        // clearTheCart();
         history.push('/shipping');
     }
 

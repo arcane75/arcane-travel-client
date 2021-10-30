@@ -23,7 +23,7 @@ const MenuBar = () => {
 
                             <NavLink className="pe-3 ps-3 item" to="/home"><i className="fas fa-home"></i> Home</NavLink>
 
-                            <NavLink className="pe-3 item" to="/services"><i className="fas fa-tasks"></i> Services</NavLink>
+                            <NavLink className="pe-3 item" to="/admin"><i className="fas fa-tasks"></i> Admin</NavLink>
 
                             <NavLink className="pe-3 item" to="/contact"><i className="fas fa-envelope"></i> Contact</NavLink>
 
