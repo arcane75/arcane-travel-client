@@ -2,13 +2,12 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
-
-// {cart.name}
+import { useHistory } from 'react-router-dom';
 import './Shipping.css';
 
 const Shipping = () => {
 
-
+    const history = useHistory();
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useAuth();
 
@@ -31,24 +30,53 @@ const Shipping = () => {
                     alert('Order processed Successfully');
                     clearTheCart();
                     reset();
+                    history.push('/home');
                 }
             })
     };
     return (
         <div>
-            <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
 
-                <input defaultValue={user.displayName} {...register("name")} />
+            <section className="vh-100" style={{ backgroundColor: "#eee" }}>
+                <div className="container h-100">
+                    <div className="row d-flex justify-content-center align-items-center h-100">
+                        <div className="col-lg-12 col-xl-11">
+                            <div className="card text-black" style={{ borderRadius: "25px" }}>
+                                <div className="card-body p-md-5">
+                                    <div className="row justify-content-center">
+                                        <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                <input defaultValue={user.email} {...register("email", { required: true })} />
-                {errors.email && <span className="error">This field is required</span>}
-                <input placeholder="Address" defaultValue="" {...register("address")} />
-                <input placeholder="City" defaultValue="" {...register("city")} />
-                <input placeholder="phone number" defaultValue="" {...register("phone")} />
-                <input placeholder="Destination" defaultValue="" {...register("Place")} />
+                                            <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Submit Your Information</p>
 
-                <input type="submit" />
-            </form>
+                                            <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
+
+                                                <input defaultValue={user.displayName} {...register("name")} />
+
+                                                <input defaultValue={user.email} {...register("email", { required: true })} />
+                                                {errors.email && <span className="error">This field is required</span>}
+                                                <input placeholder="Address" defaultValue="" {...register("address")} />
+                                                <input placeholder="City" defaultValue="" {...register("city")} />
+                                                <input placeholder="phone number" defaultValue="" {...register("phone")} />
+                                                <input placeholder="Destination" defaultValue="" {...register("Place")} />
+
+                                                <input type="submit" />
+                                            </form>
+
+
+                                        </div>
+                                        <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                                            <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/draw1.png" className="img-fluid" alt="" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     );
 };

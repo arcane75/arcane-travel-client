@@ -1,5 +1,5 @@
 import { useState, React, useEffect } from "react";
-import {  useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import initializeAuthentication from '../../Firebase/firebase.init';
 import useAuth from '../../hooks/useAuth';
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";

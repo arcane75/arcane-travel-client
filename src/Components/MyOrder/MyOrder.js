@@ -34,7 +34,7 @@ const MyOrder = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container vh-100">
             <div className="order-text">
                 <h1 className=''>My Order : {order.length}</h1>
             </div>

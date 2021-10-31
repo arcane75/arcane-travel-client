@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import './SingleService.css';
 
 const SingleService = (props) => {
-    const { name, img, description, price } = props.service || {};
-  
+    const { _id, name, img, description, price } = props.service || {};
+
     return (
         <>
-            <div className="cehome-servi">
+            <div className="home-service">
                 <div >
                     <img src={img} alt=" " />
                     <h3>{name}</h3>
@@ -18,8 +18,8 @@ const SingleService = (props) => {
                         <Link to="/details">
                             <Button className="btn btn-sm btn-warning">Explore item</Button>
                         </Link>
-                        
-                        <Link to="/cart">
+
+                        <Link to={`/orderReview/${_id}`}>
                             <Button className="btn-sm btn btn-warning" onClick={() => props.handleAddToCart(props.service)}>Purchase</Button>
                         </Link>
 

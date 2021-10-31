@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Footer.css";
-
+import logo from '../../images/logo.png';
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -9,6 +9,9 @@ const Footer = () => {
         <div className="col-md-4 col-sm-12">
           <div className="left-container text-start">
             <h1>Arcane TraVio</h1>
+            <div>
+              <img className='image-fluid w-50 my-2' src={logo} alt="" />
+            </div>
             <div className="icons-container d-flex text-center ">
 
               <div className="icon">

@@ -40,9 +40,6 @@ const MenuBar = () => {
                                 </NavLink>
                             }
 
-                            <NavLink className="ps-5 item" to="/cart"> <i className="fas fa-cart-arrow-down"></i>
-                            </NavLink>
-
 
                         </Nav>
                     </Navbar.Collapse>

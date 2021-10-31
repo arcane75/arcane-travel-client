@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -14,29 +13,23 @@ const AboutUs = () => {
                     <br />
                     <h1> Why Choose Us? </h1>
                     <br />
-                    <h2>Benefit from orthodontics </h2>
-                    <h5>Only your dentist or orthodontist can determine whether you can benefit from orthodontics. Based on diagnostic tools that include a full medical and dental health history, a clinical exam, plaster models of your teeth, and special X-rays and photographs, an orthodontist or dentist can decide whether orthodontics are recommended, and develop a treatment plan that’s right for you.
-
-The benefits of orthodontic treatment include a healthier mouth, a more pleasing appearance, and teeth that are more likely to last a lifetime.</h5>
+                    <h2>Low Rates </h2>
+                    <h5>TraVio guarantees to offer you the best available rates. And with our promise to price match, you can rest assured that you’re always getting a great deal.TraVio guarantees to offer you the best available rates. And with our promise to price match, you can rest assured that you’re always getting a great deal.TraVio guarantees to offer you the best available rates. And with our promise to price match, you can rest assured that you’re always getting a great deal.</h5>
                     <br />
-                    <h2>whitening Gel</h2>
-                    <h5>Home whitening gel usually needs to be applied daily for two to three weeks. Over-the-counter kits also are widely available for home use. They provide trays to hold the gel, or whitening strips that stick to your teeth. Talk to your dentist if you want to use these home products. Be sure to follow directions to avoid overuse and possible damage to your teeth and mouth. </h5>
+                    <h2>No Reservation Fees</h2>
+                    <h5>We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge. </h5>
                     <br />
-                    <h4>Our orthodontist treats problems such as:</h4>
-                    <h5>Overbites: When you have an overbite, your front upper teeth cover your lower teeth when you bite down.
-Underbites: If you have an underbite, your lower teeth cover your front upper teeth when you bite down.
-Overcrowding: This condition happens when there are too many teeth in the same area of the jaw.
-Tooth spacing problems: You may have a gap between two teeth that are next to each other. This problem can occur if you lose a tooth and do not replace it with an artificial one — the remaining teeth on either side may tilt towards the open space.</h5>
+                    <h4>Bringing Value to Our Accommodation Partners</h4>
+                    <h5>At TraVio, we believe that all great properties deserve to be discovered. That’s why we make it quick and easy for accommodation providers all around the world to market their properties, reach new customers, and grow their business through our platform.</h5>
                     <br />
-                    <h4> What Is An Orthodontist?</h4>
-                    <h5> An orthodontist specializes in fixing problems that happen when your teeth are out of alignment. Straight teeth are easier to keep clean, which lowers your risk for cavities and gum disease. They also help your jaw work efficiently so you can avoid joint and muscle problems.</h5>
+                    <h4>Incredible Selection</h4>
+                    <h5> Whether you want to stay in a chic city apartment, a luxury beach resort, or a cozy B&B in the countryside, Booking.com gives you amazing diversity and variety of choice – all in one place.We facilitate hundreds of thousands of transactions every day through our secure platform and work to the highest standards to guarantee your privacy.</h5>
                     <br />
-                    <h4>Welcome to Arcane Dental Care</h4>
-                    <h5>Professional dental clinic offers the whole range of dentistry services: treatment of caries, gum diseases, tooth whitening, implantation, dentures (crowns installation), surgery, occlusion correction (braces) etc. Our dentists will help you solve any dental problem painless and carefully</h5>
+                    <h4>Welcome to Travis!</h4>
+                    <h5>TraVio is an exploratory publication focused on examining the values of outdoor living, sustainable ecology, and related creative projects, all toward the passions of readers who submit their own stories in addition to the publications of staff. The nature-driven topics they cover address a wide range of inspirational content, and the site’s design offers close-up, high-def imagery from people exploring wildernesses from around the world. The homepage’s large mountain range is perfect for their background image, and their online store is well-supported with thorough descriptions of their different books, prints, and bundle options from easy-to-browse store galleries.</h5>
                 </div>
             </div>
-            
-            <Footer></Footer>
+        
         </div>
     );
 };

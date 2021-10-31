@@ -16,6 +16,8 @@ import ManageAllOrder from './components/ManageAllOrder/ManageAllOrder';
 import Admin from './components/Admin/Admin';
 import Header from './components/Header/Header';
 import MyOrder from './components/MyOrder/MyOrder';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
@@ -49,7 +51,7 @@ function App() {
               <AboutUs></AboutUs>
             </Route>
 
-            <PrivateRoute path='/cart'>
+            <PrivateRoute path='/orderReview/:orderId'>
               <OrderReview></OrderReview>
             </PrivateRoute>
 
@@ -74,6 +76,7 @@ function App() {
             </Route>
 
           </Switch>
+           <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
