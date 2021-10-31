@@ -30,7 +30,7 @@ const OrderReview = () => {
     // className="product-container"
     // className="cart-container"
     return (
-        <div className="container">
+        <div className="container vh-100">
            <div className="row">
            <div className="col-md-8">
                 {
