@@ -16,4 +16,4 @@ Project Live Link [TraVio](https://arcane-travel.web.app/).
 
 
 ### `Look`
-
+User can login or registration with Google account.User can login or registration with Email and Password.User can purchase package.Admin can add package.Admin can manage all order.Admin can delete Order.
