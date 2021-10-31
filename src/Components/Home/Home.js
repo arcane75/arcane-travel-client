@@ -1,7 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import CaroselReview from '../CaroselReview/CaroselReview';
-import Footer from '../Footer/Footer';
 import ServiceHome from '../Services/ServiceHome';
 import Subscription from '../Subscribe/Subscription';
 import './Home.css';
@@ -28,7 +27,6 @@ const Home = () => {
             <ServiceHome></ServiceHome>
             <CaroselReview></CaroselReview>
             <Subscription></Subscription>
-            <Footer></Footer>
         </div>
     );
 };
