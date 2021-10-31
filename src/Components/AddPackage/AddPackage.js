@@ -4,11 +4,7 @@ import UserLogin from '../userlogin/UserLogin';
 
 const AddPackage = () => {
     const { user } = UserLogin();
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
     const onSubmit = (data) => {
         data.email = user?.email;
@@ -18,12 +14,17 @@ const AddPackage = () => {
             body: JSON.stringify(data),
         })
             .then((res) => res.json())
-            .then((result) => console.log(result));
+            .then((result) => {
+                alert('added successfully');
+                reset();
+                console.log(result)
+
+            });
         console.log(data);
     };
     return (
         <div>
-           
+
             <section className="vh-100" style={{ backgroundColor: "#eee" }}>
                 <div className="container h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
@@ -41,7 +42,7 @@ const AddPackage = () => {
                                                     <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
                                                         <input
-                                                            {...register("title")}
+                                                            {...register("name")}
                                                             placeholder="Package Name"
                                                             className="p-2 m-2 w-100"
                                                         />
@@ -49,10 +50,10 @@ const AddPackage = () => {
                                                 </div>
 
                                                 <div className="d-flex flex-row align-items-center mb-4">
-                                                <i className="fas fa-dollar-sign fa-lg me-3 fa-fw"></i>
+                                                    <i className="fas fa-dollar-sign fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
                                                         <input
-                                                            {...register("Price")}
+                                                            {...register("price")}
                                                             placeholder="Package Price"
                                                             className="p-2 m-2 w-100"
                                                         />
@@ -76,7 +77,7 @@ const AddPackage = () => {
                                                     <i className="fas fa-image fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
                                                         <input
-                                                            {...register("image", { required: true })}
+                                                            {...register("img", { required: true })}
                                                             placeholder="Image Link"
                                                             className="p-2 m-2 w-100"
                                                         />
@@ -86,7 +87,7 @@ const AddPackage = () => {
 
                                                 {errors.exampleRequired && <span>This field is required</span>}
 
-                                                <input  type="submit" value="Include +"  className="btn btn-warning  w-50" /> 
+                                                <input type="submit" value="Include +" className="btn btn-warning  w-50" />
 
 
                                             </form>

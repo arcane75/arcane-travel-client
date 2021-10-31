@@ -8,7 +8,7 @@ const SingleService = (props) => {
   
     return (
         <>
-            <div className="home-service">
+            <div className="cehome-servi">
                 <div >
                     <img src={img} alt=" " />
                     <h3>{name}</h3>

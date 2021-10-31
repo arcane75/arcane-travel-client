@@ -14,10 +14,6 @@ const MyOrder = () => {
             .then((data) => setOrder(data));
     }, [user?.email]);
 
-    const handleStatus = e => {
-        e.preventDefault();
-    }
-
 
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure?');
@@ -61,13 +57,7 @@ const MyOrder = () => {
                             <td>{pd.Place}</td>
                             <td>{pd.email}</td>
                             <td>{pd.address}</td>
-                            <td>
-                            {pd.status}
-                                {/* <form onSubmit={handleStatus}>
-                                    <input type="submit" value={pd.status} />
-                                </form> */}
-
-                            </td>
+                            <td> {pd.status}</td>
                             <td>
                                 <button
                                     onClick={() => handleDelete(pd._id)}
