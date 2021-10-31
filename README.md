@@ -1,4 +1,4 @@
-# ARCANE DENTAL CARE
+# ARCANE Travel
 
 Project Live Link [TraVio](https://arcane-travel.web.app/).
 
