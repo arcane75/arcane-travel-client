@@ -1,9 +1,11 @@
-.review-container{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 10px;
-    margin-left: 30px;
-    margin-right:30px;
+.single-review{
+   column-gap: 10px;
+}
+.single-review:hover{
+    border: 1px solid #00BCD5;
+ }
+.single-review img{
+    border-radius: 45px;
 }
 .review-container p{
     text-align: justify;

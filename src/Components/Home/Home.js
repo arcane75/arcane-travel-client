@@ -1,10 +1,9 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
+import CaroselReview from '../CaroselReview/CaroselReview';
 import Footer from '../Footer/Footer';
 import ServiceHome from '../Services/ServiceHome';
 import Subscription from '../Subscribe/Subscription';
-import UserReviews from '../UserReviews/UserReviews';
 import './Home.css';
 
 const Home = () => {
@@ -16,19 +15,18 @@ const Home = () => {
                 <div className="row serviceinfo">
 
                     <div className="service-text col col-sm-12 ">
-                        <h2> Committed To</h2>
-                        <h1>Excellence </h1>
+                        <h2>Best Holiday</h2>
+                        <h1>Destinations </h1>
                     </div>
                     <div className="col">
 
-                        <Button className="btn-lg btn btn-warning mx-auto"> All Services</Button>
                     </div>
 
                 </div>
 
             </div>
             <ServiceHome></ServiceHome>
-            <UserReviews></UserReviews>
+            <CaroselReview></CaroselReview>
             <Subscription></Subscription>
             <Footer></Footer>
         </div>

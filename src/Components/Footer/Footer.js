@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-4 col-sm-12">
           <div className="left-container text-start">
-            <h1>Arcane Dental Care</h1>
+            <h1>Arcane TraVio</h1>
             <div className="icons-container d-flex text-center ">
 
               <div className="icon">
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="col-md-1 col-sm-12">
+        <div className="col-md-4 col-sm-12">
           <div className="">
             <ul>
 
@@ -42,8 +42,8 @@ const Footer = () => {
               </li>
 
               <li className="footer-menu">
-                <Link to="/services" className="item">
-                  Services
+                <Link to="/about" className="item">
+                  About
                 </Link>
               </li>
 
@@ -54,33 +54,17 @@ const Footer = () => {
               </li>
 
               <li className="footer-menu">
-                <Link to="/about" className="item">
-                  About us
+                <Link to="/admin" className="item">
+                  Admin
                 </Link>
               </li>
 
             </ul>
           </div>
         </div>
-        <div className="col-md-4 my-5 col-sm-12">
 
-            <p><i className="fa fa-clock-o"></i>Monday 8:00 AM - 9:00 PM</p>
 
-            <p><i className="fa fa-clock-o"></i>Tuesday 8:00 AM - 9:00 PM</p>
-
-            <p><i className="fa fa-clock-o"></i>Wednusday 8:00 AM - 9:00 PM</p>
-
-            <p><i className="fa fa-clock-o"></i>Thursday 8:00 AM - 9:00 PM</p>
-
-            <p><i className="fa fa-clock-o"></i>Friday 8:00 AM - 9:00 PM</p>
-
-            <p><i className="fa fa-clock-o"></i>Saturday 8:00 AM - 9:00 PM</p>
-
-            <p><i className="fa fa-clock-o"></i>Sunday CLOSED</p>
-
-        </div>
-
-        <div className="col-md-3 col-sm-12">
+        <div className="col-md-4 col-sm-12">
           <div className="">
             <h3>Sign up for the newsletter</h3>
             <br />

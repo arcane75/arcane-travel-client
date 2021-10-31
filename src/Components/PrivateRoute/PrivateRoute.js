@@ -9,7 +9,7 @@ initializeAuthentication();
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
     
-    console.log(user);
+    // console.log(user);
     if (isLoading) {
         return <Spinner animation="border" variant="danger" />
     }

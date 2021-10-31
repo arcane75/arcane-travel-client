@@ -1,18 +1,23 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { Table } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Table } from 'react-bootstrap';
+import useFirebase from '../../hooks/useFirebase';
+import './MyOrder.css';
 
-const ManageAllOrder = () => {
+const MyOrder = () => {
+    const { user } = useFirebase();
     const [order, setOrder] = useState([]);
-    const [status, setStatus] = useState('');
-    const [control, setConrol] = useState(false);
-
+    const [control, setConrol] = useState(false);;
 
     useEffect(() => {
-        fetch("https://secret-oasis-75904.herokuapp.com/allOrder")
+        fetch(`https://secret-oasis-75904.herokuapp.com/myOrder/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setOrder(data));
-    }, [control]);
+    }, [user?.email]);
+
+    const handleStatus = e => {
+        e.preventDefault();
+    }
+
 
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure?');
@@ -32,35 +37,12 @@ const ManageAllOrder = () => {
         }
     }
 
-
-
-    const handleStatus = (id) => {
-        const newStatus = { status: 'Approved' };
-        setStatus(newStatus);
-        fetch(`https://secret-oasis-75904.herokuapp.com/updateStatus/${id}`, {
-            method: "PUT",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(status)
-
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.modifiedCount > 0) {
-                    alert('Updated Successfully');
-                    //setStatus(data);
-                    // setConrol(!control);
-                }
-            })
-    }
-
-
     return (
         <div className="container">
             <div className="order-text">
-                <h1>Total Order {order?.length}</h1>
+                <h1 className=''>My Order : {order.length}</h1>
             </div>
+            <br />
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -80,18 +62,16 @@ const ManageAllOrder = () => {
                             <td>{pd.email}</td>
                             <td>{pd.address}</td>
                             <td>
-                                <button
-                                    onClick={() => handleStatus(pd._id)}
-                                    className="btn bg-warning p-2"
-                                >
-                                    {pd.status}
-                                </button>
+                            {pd.status}
+                                {/* <form onSubmit={handleStatus}>
+                                    <input type="submit" value={pd.status} />
+                                </form> */}
 
                             </td>
                             <td>
                                 <button
                                     onClick={() => handleDelete(pd._id)}
-                                    className="btn bg-danger p-2"
+                                    className="btn bg-warning p-2"
                                 >
                                     Delete
                                 </button></td>
@@ -103,4 +83,4 @@ const ManageAllOrder = () => {
     );
 };
 
-export default ManageAllOrder;
+export default MyOrder;

@@ -15,6 +15,7 @@ import AddPackage from './components/AddPackage/AddPackage';
 import ManageAllOrder from './components/ManageAllOrder/ManageAllOrder';
 import Admin from './components/Admin/Admin';
 import Header from './components/Header/Header';
+import MyOrder from './components/MyOrder/MyOrder';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
               <UserLogin></UserLogin>
             </Route>
 
+            <PrivateRoute path='/myOrder'>
+              <MyOrder></MyOrder>
+            </PrivateRoute>
 
             <Route path="/contact">
               <ContactUs></ContactUs>
@@ -45,13 +49,13 @@ function App() {
               <AboutUs></AboutUs>
             </Route>
 
-            <Route path='/cart'>
+            <PrivateRoute path='/cart'>
               <OrderReview></OrderReview>
-            </Route>
+            </PrivateRoute>
 
-            <Route path='/shipping'>
+            <PrivateRoute path='/shipping'>
               <Shipping></Shipping>
-            </Route>
+            </PrivateRoute>
 
             <Route path='/addpackage'>
               <AddPackage></AddPackage>

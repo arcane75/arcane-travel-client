@@ -21,13 +21,15 @@ const MenuBar = () => {
                         <Nav className=" justify-content-end " style={{ width: "100%" }}>
 
 
-                            <NavLink className="pe-3 ps-3 item" to="/home"><i className="fas fa-home"></i> Home</NavLink>
+                            <NavLink className="pe-5 ps-3 item" to="/home"><i className="fas fa-home"></i> Home</NavLink>
 
-                            <NavLink className="pe-3 item" to="/admin"><i className="fas fa-tasks"></i> Admin</NavLink>
+                            <NavLink className="pe-5 item" to="/myOrder"><i className="fas fa-user"></i> My Order</NavLink>
 
-                            <NavLink className="pe-3 item" to="/contact"><i className="fas fa-envelope"></i> Contact</NavLink>
+                            <NavLink className="pe-5 item" to="/admin"><i className="fas fa-tasks"></i> Admin</NavLink>
 
-                            <NavLink className="pe-3 item" to="/about"><i className="far fa-calendar-check"></i> About Us</NavLink>
+                            <NavLink className="pe-5 item" to="/contact"><i className="fas fa-envelope"></i> Contact</NavLink>
+
+                            <NavLink className="pe-5 item" to="/about"><i className="far fa-calendar-check"></i> About Us</NavLink>
 
 
                             {(user?.email) ?
@@ -38,7 +40,7 @@ const MenuBar = () => {
                                 </NavLink>
                             }
 
-                            <NavLink className="ps-3 item" to="/cart"> <i className="fas fa-cart-arrow-down"></i>
+                            <NavLink className="ps-5 item" to="/cart"> <i className="fas fa-cart-arrow-down"></i>
                             </NavLink>
 
 

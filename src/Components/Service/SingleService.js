@@ -15,7 +15,7 @@ const SingleService = (props) => {
                     <p>{description}</p>
                     <h2>Price: ${price} </h2>
                     <div>
-                        <Link to="/services">
+                        <Link to="/details">
                             <Button className="btn btn-sm btn-warning">Explore item</Button>
                         </Link>
                         

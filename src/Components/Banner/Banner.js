@@ -3,19 +3,24 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import banner1 from '../../images/banner-1.jpg';
 import banner2 from '../../images/banner-2.jpg';
+import banner3 from '../../images/banner-4.jpg';
 
 const Banner = () => {
 
     return (
         <div>
-        <Carousel autoPlay>
+        <Carousel autoPlay className=" ">
             <div>
-                <img src={banner1} alt="" />
+                <img className="img-fluid" src={banner1} alt="" />
                 <p className="legend">Explore the nature</p>
             </div>
             <div>
-                <img src={banner2} alt="" />
+                <img className="img-fluid" src={banner2} alt="" />
                 <p className="legend">Sea view nature</p>
+            </div>
+            <div>
+                <img className="img-fluid" src={banner3} alt="" />
+                <p className="legend">Maldives Land</p>
             </div>
         </Carousel>
         </div>

@@ -9,6 +9,7 @@
 .home-service-container img{
     width:100%;
     margin-bottom: 20px;
+    height: 250px;
 }
 .home-service-container h3{
     color: #115278;
@@ -30,7 +31,7 @@
 }
 
 .home-service-container img{
-    width:50%;
-    margin-bottom: 20px;
+    width:80%;
+    margin-bottom: 10px;
 }
 }
